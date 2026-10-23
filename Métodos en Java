@@ -1,0 +1,78 @@
+# Práctica evaluativa: Clase Producto (Java)
+
+Ejercicio de consolidación de métodos, parámetros, `void` vs. `return` y paso por valor (Clase N°03, Cierre de Grupo 2).
+
+## Integrantes
+
+- Anthony Armas
+- Sandra Aululema
+- Joselyn Guaman
+- Valeria Ortiz
+- Andres Vayas
+
+## Ejercicio asignado
+
+Completar la clase `Producto` identificando los espacios faltantes (`___`) en la firma de los métodos, el tipo de retorno y la palabra reservada correspondiente, y probarla desde la clase principal `Main`.
+
+La clase `Producto` tiene:
+
+| Elemento | Tipo | Descripción |
+|---|---|---|
+| `nombre` | `String` | Nombre del producto |
+| `precio` | `double` | Precio del producto |
+| `mostrarDetalles()` | `void` | Imprime en consola el nombre y el precio. Usa `void` porque solo realiza una acción y no devuelve ningún dato |
+| `calcularPrecioFinal(double porcentajeDescuento)` | `double` | Recibe el descuento en porcentaje y devuelve el precio con el descuento aplicado. Usa `return` para entregar el resultado a `Main` |
+
+### Archivos
+
+- `Producto.java`: clase con los atributos y los dos métodos.
+- `Main.java`: clase principal que instancia el objeto `Producto` y llama a los métodos.
+
+## Instrucciones para ejecutar
+
+Requisito: tener instalado el JDK de Java (versión 8 o superior).
+
+1. Clonar el repositorio y entrar a la carpeta:
+
+   ```bash
+   git clone <URL-del-repositorio>
+   cd <nombre-del-repositorio>
+   ```
+
+2. Compilar los archivos:
+
+   ```bash
+   javac Producto.java Main.java
+   ```
+
+3. Ejecutar el programa:
+
+   ```bash
+   java Main
+   ```
+
+Salida esperada:
+
+```
+Producto: Laptop | Precio: $800.0
+Precio final con oferta: $680.0
+```
+
+## Casos de prueba
+
+La fórmula aplicada es: `precio final = precio - (precio * (porcentajeDescuento / 100))`.
+
+| Caso | Producto | Precio | Descuento (argumento) | Resultado esperado |
+|---|---|---|---|---|
+| 1 | Laptop | 800.0 | 15.0 | `Precio final con oferta: $680.0` |
+| 2 | Mouse | 50.0 | 20.0 | `Precio final con oferta: $40.0` |
+| 3 | Teclado | 100.0 | 0.0 | `Precio final con oferta: $100.0` (sin descuento, el precio no cambia) |
+
+Para probar los casos 2 y 3, modificar en `Main.java` los valores de `nombre`, `precio` y el argumento enviado a `calcularPrecioFinal(...)`.
+
+## Conceptos aplicados
+
+- **Firma del método:** define visibilidad, tipo de retorno, nombre y parámetros.
+- **`void` vs. `return`:** `void` ejecuta acciones; `return` calcula y devuelve valores.
+- **Parámetro vs. argumento:** el parámetro es el molde (`double porcentajeDescuento`); el argumento es el dato real (`15.0`).
+- **Paso por valor:** Java siempre envía copias de las variables a los métodos.
