@@ -62,6 +62,7 @@ Precio final con oferta: $680.0
 
 
 -No asisten
+```
 Sandra Alulema
 Valentina Valeria
 Joselyn Guaman 
