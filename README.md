@@ -59,3 +59,9 @@ Precio final con oferta: $680.0
 ```
 
 ## Casos de
+
+
+-No asisten
+Sandra Alulema
+Valentina Valeria
+Joselyn Guaman 
