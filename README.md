@@ -6,7 +6,7 @@ Ejercicio de consolidación de métodos, parámetros, `void` vs. `return` y paso
 
 - Anthony Armas
 - Sandra Aululema
-- Joselyn Guaman
+- Joselyn Guamán
 - Valeria Ortiz
 - Andres Vayas
 
