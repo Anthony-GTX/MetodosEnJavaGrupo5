@@ -1,0 +1,4 @@
+Cada carpeta es independiente. Para ejecutar:
+  cd Codigo_XX_...
+  javac -encoding UTF-8 *.java
+  java Main
